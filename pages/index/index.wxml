@@ -1,0 +1,25 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto" wx:if="{{}}">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view class="wxParse">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+  </view>
+  <view bindtap="bindTextarea">我要评论...</view>
+  <view style="height: 85px;width:100%;border: 1px solid #ccc" wx:if="{{discussShow}}" >
+    <view class="cf-box">
+      <textarea focus="{{discussShow}}" cursor-spacing="20" fixed="true" placeholder="我要评论" maxlength="-1" value="{{textValue}}" bindblur="bindbtn"></textarea>
+    </view>
+  </view>
+  <view  >发送</view>
+  <button open-type="share" style="position: fixed;right: 20px;top: 50px;width:20px">分享</button>
+</view>

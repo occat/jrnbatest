@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/sportData/sportData"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath":"images/footer_news.png",
+      "selectedIconPath":"images/footer_news_1.png",
+      "text": "新闻"
+    }, {
+      "pagePath": "pages/sportData/sportData",
+      "iconPath":"images/footer_data_1.png",
+      "selectedIconPath":"images/footer_data.png",
+      "text": "数据"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
