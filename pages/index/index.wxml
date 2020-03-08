@@ -16,6 +16,7 @@
   </view>
   <view bindtap="bindTextarea">我要评论...</view>
   <view>测试中</view>
+  <view>第二次测试，测试更改文件，测试是否成功</view>
   <view style="height: 85px;width:100%;border: 1px solid #ccc" wx:if="{{discussShow}}" >
     <view class="cf-box">
       <textarea focus="{{discussShow}}" cursor-spacing="20" fixed="true" placeholder="我要评论" maxlength="-1" value="{{textValue}}" bindblur="bindbtn"></textarea>
