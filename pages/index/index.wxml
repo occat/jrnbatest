@@ -17,7 +17,9 @@
   <view bindtap="bindTextarea">我要评论...</view>
   <view>测试中</view>
 
+
   <view>第二次测试,主支测试</view>
+
 
   <view style="height: 85px;width:100%;border: 1px solid #ccc" wx:if="{{discussShow}}" >
     <view class="cf-box">
